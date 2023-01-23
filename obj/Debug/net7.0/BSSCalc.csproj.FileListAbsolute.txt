@@ -1,0 +1,15 @@
+C:\Users\Nicho\Desktop\C#\BSSCalc\bin\Debug\net7.0\BSSCalc.exe
+C:\Users\Nicho\Desktop\C#\BSSCalc\bin\Debug\net7.0\BSSCalc.deps.json
+C:\Users\Nicho\Desktop\C#\BSSCalc\bin\Debug\net7.0\BSSCalc.runtimeconfig.json
+C:\Users\Nicho\Desktop\C#\BSSCalc\bin\Debug\net7.0\BSSCalc.dll
+C:\Users\Nicho\Desktop\C#\BSSCalc\bin\Debug\net7.0\BSSCalc.pdb
+C:\Users\Nicho\Desktop\C#\BSSCalc\obj\Debug\net7.0\BSSCalc.csproj.AssemblyReference.cache
+C:\Users\Nicho\Desktop\C#\BSSCalc\obj\Debug\net7.0\BSSCalc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nicho\Desktop\C#\BSSCalc\obj\Debug\net7.0\BSSCalc.AssemblyInfoInputs.cache
+C:\Users\Nicho\Desktop\C#\BSSCalc\obj\Debug\net7.0\BSSCalc.AssemblyInfo.cs
+C:\Users\Nicho\Desktop\C#\BSSCalc\obj\Debug\net7.0\BSSCalc.csproj.CoreCompileInputs.cache
+C:\Users\Nicho\Desktop\C#\BSSCalc\obj\Debug\net7.0\BSSCalc.dll
+C:\Users\Nicho\Desktop\C#\BSSCalc\obj\Debug\net7.0\refint\BSSCalc.dll
+C:\Users\Nicho\Desktop\C#\BSSCalc\obj\Debug\net7.0\BSSCalc.pdb
+C:\Users\Nicho\Desktop\C#\BSSCalc\obj\Debug\net7.0\BSSCalc.genruntimeconfig.cache
+C:\Users\Nicho\Desktop\C#\BSSCalc\obj\Debug\net7.0\ref\BSSCalc.dll
