@@ -6,9 +6,9 @@ public class Program
     public static void Main(string[] args)
     {
         Bees bees = new Bees();
-        // bees.Load();
-        // bees.ListFull();
-        bees.Save();
+        bees.Load();
+        bees.ListFull();
+        // bees.Save();
 
 
         int offset = 1;

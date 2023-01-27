@@ -45,7 +45,6 @@ public class Bees
         beesBase.Add(new BeesBase(new KeyValuePair<int, string>(BeesDict.Keys.ToList()[18], BeesDict.Values.ToList()[18]), BeesBase.BeeRarity.Epic, BeesBase.BeeColour.Red, 20, 15.4, 4, 10, 80));
         beesBase.Add(new BeesBase(new KeyValuePair<int, string>(BeesDict.Keys.ToList()[19], BeesDict.Values.ToList()[19]), BeesBase.BeeRarity.Epic, BeesBase.BeeColour.Red, 25, 15.4, 5, 10, 140));
         beesBase.Add(new BeesBase(new KeyValuePair<int, string>(BeesDict.Keys.ToList()[20], BeesDict.Values.ToList()[20]), BeesBase.BeeRarity.Epic, BeesBase.BeeColour.ColourLess, 20, 19.6, 2, 10, 80));
-
         #endregion Epic
 
 

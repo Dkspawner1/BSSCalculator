@@ -14,7 +14,11 @@ public partial class BeesBase
     public double BaseSpeed { get; protected set; }
     public double BaseAttack { get; protected set; }
     public double BaseGather { get; protected set; }
+    // Todo: Implement
+    public int BaseGatherSpeed { get; protected set; }
     public double BaseProduction { get; protected set; }
+    // Todo: Implement
+    public int BaseProductionSpeed { get; protected set; }
 
     public BeesBase(KeyValuePair<int, string>? beeEnum, BeeRarity rarity, BeeColour colour, double baseEnergy, double baseSpeed, double baseAttack, double baseGather, double baseProduction)
     {
