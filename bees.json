@@ -1,20 +1,212 @@
 [
   {
     "BeeEnum": { "Key": 1, "Value": "Basic" },
+    "Rarity": 0,
+    "Colour": 0,
     "BaseEnergy": 20,
     "BaseSpeed": 14,
     "BaseAttack": 1,
     "BaseGather": 10,
-    "BaseProduction": 80,
-    "Colour": 0
+    "BaseProduction": 80
   },
   {
     "BeeEnum": { "Key": 2, "Value": "Bomber" },
+    "Rarity": 1,
+    "Colour": 0,
     "BaseEnergy": 20,
     "BaseSpeed": 15.4,
     "BaseAttack": 2,
     "BaseGather": 10,
-    "BaseProduction": 120,
-    "Colour": 0
+    "BaseProduction": 120
+  },
+  {
+    "BeeEnum": { "Key": 3, "Value": "Brave" },
+    "Rarity": 1,
+    "Colour": 0,
+    "BaseEnergy": 30,
+    "BaseSpeed": 16.8,
+    "BaseAttack": 5,
+    "BaseGather": 10,
+    "BaseProduction": 200
+  },
+  {
+    "BeeEnum": { "Key": 4, "Value": "Bumble" },
+    "Rarity": 1,
+    "Colour": 2,
+    "BaseEnergy": 40,
+    "BaseSpeed": 10.5,
+    "BaseAttack": 1,
+    "BaseGather": 18,
+    "BaseProduction": 80
+  },
+  {
+    "BeeEnum": { "Key": 5, "Value": "Cool" },
+    "Rarity": 1,
+    "Colour": 2,
+    "BaseEnergy": 20,
+    "BaseSpeed": 14,
+    "BaseAttack": 2,
+    "BaseGather": 10,
+    "BaseProduction": 120
+  },
+  {
+    "BeeEnum": { "Key": 6, "Value": "Hasty" },
+    "Rarity": 1,
+    "Colour": 0,
+    "BaseEnergy": 20,
+    "BaseSpeed": 19.6,
+    "BaseAttack": 1,
+    "BaseGather": 10,
+    "BaseProduction": 80
+  },
+  {
+    "BeeEnum": { "Key": 7, "Value": "Looker" },
+    "Rarity": 1,
+    "Colour": 0,
+    "BaseEnergy": 20,
+    "BaseSpeed": 14,
+    "BaseAttack": 1,
+    "BaseGather": 13,
+    "BaseProduction": 160
+  },
+  {
+    "BeeEnum": { "Key": 8, "Value": "Rad" },
+    "Rarity": 1,
+    "Colour": 1,
+    "BaseEnergy": 20,
+    "BaseSpeed": 14,
+    "BaseAttack": 1,
+    "BaseGather": 13,
+    "BaseProduction": 80
+  },
+  {
+    "BeeEnum": { "Key": 9, "Value": "Rascal" },
+    "Rarity": 1,
+    "Colour": 1,
+    "BaseEnergy": 20,
+    "BaseSpeed": 16.1,
+    "BaseAttack": 3,
+    "BaseGather": 10,
+    "BaseProduction": 80
+  },
+  {
+    "BeeEnum": { "Key": 10, "Value": "Stubborn" },
+    "Rarity": 1,
+    "Colour": 0,
+    "BaseEnergy": 20,
+    "BaseSpeed": 11.9,
+    "BaseAttack": 2,
+    "BaseGather": 10,
+    "BaseProduction": 80
+  },
+  {
+    "BeeEnum": { "Key": 11, "Value": "Bubble" },
+    "Rarity": 2,
+    "Colour": 2,
+    "BaseEnergy": 20,
+    "BaseSpeed": 16.1,
+    "BaseAttack": 3,
+    "BaseGather": 10,
+    "BaseProduction": 160
+  },
+  {
+    "BeeEnum": { "Key": 12, "Value": "Bucko" },
+    "Rarity": 2,
+    "Colour": 2,
+    "BaseEnergy": 30,
+    "BaseSpeed": 15.4,
+    "BaseAttack": 5,
+    "BaseGather": 17,
+    "BaseProduction": 80
+  },
+  {
+    "BeeEnum": { "Key": 13, "Value": "Commander" },
+    "Rarity": 2,
+    "Colour": 0,
+    "BaseEnergy": 30,
+    "BaseSpeed": 14,
+    "BaseAttack": 4,
+    "BaseGather": 15,
+    "BaseProduction": 80
+  },
+  {
+    "BeeEnum": { "Key": 14, "Value": "Demo" },
+    "Rarity": 2,
+    "Colour": 0,
+    "BaseEnergy": 20,
+    "BaseSpeed": 16.8,
+    "BaseAttack": 3,
+    "BaseGather": 10,
+    "BaseProduction": 200
+  },
+  {
+    "BeeEnum": { "Key": 15, "Value": "Exhausted" },
+    "Rarity": 2,
+    "Colour": 0,
+    "BaseEnergy": 0,
+    "BaseSpeed": 10.5,
+    "BaseAttack": 1,
+    "BaseGather": 10,
+    "BaseProduction": 240
+  },
+  {
+    "BeeEnum": { "Key": 16, "Value": "Fire" },
+    "Rarity": 2,
+    "Colour": 1,
+    "BaseEnergy": 25,
+    "BaseSpeed": 11.2,
+    "BaseAttack": 4,
+    "BaseGather": 10,
+    "BaseProduction": 80
+  },
+  {
+    "BeeEnum": { "Key": 17, "Value": "Frosty" },
+    "Rarity": 2,
+    "Colour": 2,
+    "BaseEnergy": 25,
+    "BaseSpeed": 11.2,
+    "BaseAttack": 1,
+    "BaseGather": 10,
+    "BaseProduction": 80
+  },
+  {
+    "BeeEnum": { "Key": 18, "Value": "Honey" },
+    "Rarity": 2,
+    "Colour": 0,
+    "BaseEnergy": 20,
+    "BaseSpeed": 14,
+    "BaseAttack": 1,
+    "BaseGather": 10,
+    "BaseProduction": 360
+  },
+  {
+    "BeeEnum": { "Key": 19, "Value": "Rage" },
+    "Rarity": 2,
+    "Colour": 1,
+    "BaseEnergy": 20,
+    "BaseSpeed": 15.4,
+    "BaseAttack": 4,
+    "BaseGather": 10,
+    "BaseProduction": 80
+  },
+  {
+    "BeeEnum": { "Key": 20, "Value": "Riley" },
+    "Rarity": 2,
+    "Colour": 1,
+    "BaseEnergy": 25,
+    "BaseSpeed": 15.4,
+    "BaseAttack": 5,
+    "BaseGather": 10,
+    "BaseProduction": 140
+  },
+  {
+    "BeeEnum": { "Key": 21, "Value": "Shocked" },
+    "Rarity": 2,
+    "Colour": 0,
+    "BaseEnergy": 20,
+    "BaseSpeed": 19.6,
+    "BaseAttack": 2,
+    "BaseGather": 10,
+    "BaseProduction": 80
   }
 ]
