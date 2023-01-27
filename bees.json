@@ -1,0 +1,20 @@
+[
+  {
+    "BeeEnum": { "Key": 1, "Value": "Basic" },
+    "BaseEnergy": 20,
+    "BaseSpeed": 14,
+    "BaseAttack": 1,
+    "BaseGather": 10,
+    "BaseProduction": 80,
+    "Colour": 0
+  },
+  {
+    "BeeEnum": { "Key": 2, "Value": "Bomber" },
+    "BaseEnergy": 20,
+    "BaseSpeed": 15.4,
+    "BaseAttack": 2,
+    "BaseGather": 10,
+    "BaseProduction": 120,
+    "Colour": 0
+  }
+]

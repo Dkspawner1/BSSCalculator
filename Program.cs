@@ -5,9 +5,10 @@ public class Program
     private enum Selection : sbyte { Energy = 0x1, MS, Attack, Gather, Production, NONE }
     public static void Main(string[] args)
     {
+        Bees bees = new Bees();
+        bees.Load();
+        bees.ListFull();
 
-        Bees b = new Bees();
-        b.PrintDictionary(true, false);
 
         int offset = 1;
         bool finished = false;
