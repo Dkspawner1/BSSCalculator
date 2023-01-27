@@ -20,6 +20,7 @@ This project consists of two main parts, the calculations and storing of each be
     "BaseGather": 10,
     "BaseProduction": 80
   },
+  {
     "BeeEnum": { "Key": 7, "Value": "Looker" },
     "Rarity": 1,
     "Colour": 0,
@@ -40,5 +41,4 @@ This project consists of two main parts, the calculations and storing of each be
     "BaseProduction": 160
   },
 ]
-
 ```
