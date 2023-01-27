@@ -3,13 +3,18 @@
 public class Program
 {
     private enum Selection : sbyte { Energy = 0x1, MS, Attack, Gather, Production, NONE }
+
     public static void Main(string[] args)
     {
+#if !DEBUG
+        BenchmarkRunner.Run<BaseStats>();
+#else
+        BaseStats bs = new BaseStats();
+        bs.MainForNow();
         int offset = 1;
         bool finished = false;
         do
         {
-
             Console.WriteLine("Would you like to calculate:");
             IList list = Enum.GetValues(typeof(Selection));
             for (int i = 0; i < list.Count; i++)
@@ -51,6 +56,8 @@ public class Program
         // The formula for a bee's Attack is: (Base Attack Damage + Attack Buffs) * Attack multiplier (* 1.5 If the bee is gifted)
         // The formula for Gather Amount is: Base Gather Amount * (1 + .10 * (Level - 1)) * Gifted Multiplier
         // The formula for Production Amount is: (Base Production Amount + Production Amount) * (1 + .10 * (Level - 1)) * Conversion Rate * Gifted Multiplier
+#endif
+
     }
 
     /// <summary>
@@ -93,5 +100,6 @@ public class Program
         result = Round(RemoveFirstDigit(result), 2);
         return result;
     }
+
     private static double RemoveFirstDigit(double d) => d % (double)Pow(10, Floor(Log10(d)));
 }
