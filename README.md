@@ -3,8 +3,8 @@ Based on the calculations for the BSS wiki this is my passion project where I ch
 
 This project consists of two main parts, the calculations and storing of each bee with their respective attributes  
 
-[ ] Calculations Progress: 1/5
-[x] Functioning JSON file which gets serialized and deserialized into my class objects.
+[ ] Calculations Progress: 1/5 <br />
+[x] Functioning JSON file which gets serialized and deserialized into my class objects.<br />
 
 # Json Example (only common, rare and epic bees added for now)
 ## Example of one bee and their stats
