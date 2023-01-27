@@ -7,7 +7,7 @@ This project consists of two main parts, the calculations and storing of each be
 [x] Functioning JSON file which gets serialized and deserialized into my class objects.<br />
 
 # Json Example (only common, rare and epic bees added for now)
-## Example of one bee and their stats
+## Example each rarity of bee and how it's stored and formated in my JSON 
 ```json
 [
   {
@@ -19,7 +19,26 @@ This project consists of two main parts, the calculations and storing of each be
     "BaseAttack": 1,
     "BaseGather": 10,
     "BaseProduction": 80
-  }
+  },
+    "BeeEnum": { "Key": 7, "Value": "Looker" },
+    "Rarity": 1,
+    "Colour": 0,
+    "BaseEnergy": 20,
+    "BaseSpeed": 14,
+    "BaseAttack": 1,
+    "BaseGather": 13,
+    "BaseProduction": 160
+  },
+  {
+    "BeeEnum": { "Key": 11, "Value": "Bubble" },
+    "Rarity": 2,
+    "Colour": 2,
+    "BaseEnergy": 20,
+    "BaseSpeed": 16.1,
+    "BaseAttack": 3,
+    "BaseGather": 10,
+    "BaseProduction": 160
+  },
 ]
 
 ```
