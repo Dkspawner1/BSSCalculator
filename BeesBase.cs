@@ -31,6 +31,6 @@ public partial class BeesBase
         BaseGather = baseGather;
         BaseProduction = baseProduction;
     }
-    public void ListBee() => Console.WriteLine($"{BeeEnum.Value} {Colour} {BaseEnergy} {BaseSpeed} {BaseAttack} {BaseGather} {BaseProduction}");
+    public void ListBee() => Console.WriteLine($"{BeeEnum!.Value} {Colour} {BaseEnergy} {BaseSpeed} {BaseAttack} {BaseGather} {BaseProduction}");
 
 }

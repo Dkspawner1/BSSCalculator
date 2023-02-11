@@ -1,3 +1,5 @@
+using System.Linq;
+
 namespace BSSCalculator;
 
 [Serializable]
@@ -8,7 +10,7 @@ public class Bees
 
     [Flags]
     private enum BeeTypes : byte { Basic = 0x1, Bomber, Brave, Bumble, Cool, Hasty, Looker, Rad, Rascal, Stubborn, Bubble, Bucko, Commander, Demo, Exhausted, Fire, Frosty, Honey, Rage, Riley, Shocked, Baby, Carpenter, Demon, Diamond, Lion, Music, Ninja, Shy, Buoyant, Fuzzy, Precise, Spicy, Tadpole, Vector, Bear, Cobalt, Crimson, Digital, Festive, Gummy, Photon, Puppy, Tabby, Vicious, Windy }
-
+    /// <returns></returns>
     private Dictionary<int, string> Create() => Enum.GetValues(typeof(BeeTypes)).Cast<BeeTypes>().ToDictionary(t => (int)t, t => t.ToString());
     public Dictionary<int, string> BeesDict { get; private set; }
     private List<BeesBase> beesBase;
@@ -19,6 +21,9 @@ public class Bees
         BeesDict = Create();
         // TODO: each bee has their own time for conversion and production so I have to make each time accurate I.E most bees run convert/produce every 4 seconds 
         // for (int i = 0; i < BeesDict.Count; i++)
+    }
+    public void PopulateBees()
+    {
         #region Common
         beesBase.Add(new BeesBase(new KeyValuePair<int, string>(BeesDict.Keys.ToList()[0], BeesDict.Values.ToList()[0]), BeesBase.BeeRarity.Common, BeesBase.BeeColour.ColourLess, 20, 14, 1, 10, 80));
         #endregion Common
@@ -47,27 +52,32 @@ public class Bees
         beesBase.Add(new BeesBase(new KeyValuePair<int, string>(BeesDict.Keys.ToList()[20], BeesDict.Values.ToList()[20]), BeesBase.BeeRarity.Epic, BeesBase.BeeColour.ColourLess, 20, 19.6, 2, 10, 80));
         #endregion Epic
 
-
     }
 
     public void ListFull()
     {
-        for (int i = (int)default(BeeTypes); i < beesBase.Count; i++)
-            beesBase[i].ListBee();
+        foreach (var bee in beesBase)
+            bee.ListBee();
+    }
+    public void ListSingle([Optional] string beeValue, [Optional] int beeKey)
+    {
+        if (beeKey is not 0)
+            beesBase[beeKey].ListBee();
+        //TODO: implement value search
     }
     internal void Save()
     {
         var serialized = JsonSerializer.Serialize<List<BeesBase>>(beesBase);
         File.WriteAllText(PATH, serialized);
     }
-    internal void Load()
+    internal bool Load()
     {
         var contents = File.ReadAllText(PATH);
         var deserialized = JsonSerializer.Deserialize<List<BeesBase>>(contents);
-        foreach (var entry in deserialized)
-        {
-            beesBase.Add(entry);
-        }
+        beesBase.AddRange(deserialized!);
+        if (beesBase.Any(i => i.Equals(null) || i.Equals(string.Empty)))
+            return false;
+        return true;
     }
 
     internal void PrintDictionary([Optional] bool listKey, [Optional] bool listValue)

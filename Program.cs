@@ -6,16 +6,14 @@ public class Program
     public static void Main(string[] args)
     {
         Bees bees = new Bees();
-        bees.Load();
+        if (!bees.Load())
+            bees.PopulateBees();
         bees.ListFull();
-        // bees.Save();
-
 
         int offset = 1;
         bool finished = false;
         do
         {
-
             Console.WriteLine("Would you like to calculate:");
             IList list = Enum.GetValues(typeof(Selection));
             for (int i = 0; i < list.Count; i++)
@@ -30,7 +28,7 @@ public class Program
             switch ((Selection)select)
             {
                 case Selection.Energy:
-                    var energy = CalculateEnergy();
+                    var energy = CalculateEnergy(bees);
                     Console.WriteLine(energy);
                     break;
                 case Selection.MS:
@@ -47,9 +45,7 @@ public class Program
                     Console.WriteLine("Invalid Selection");
                     valid = false;
                     break;
-
             }
-
         }
         while (!finished);
 
@@ -63,19 +59,39 @@ public class Program
     /// The formula for energy is: Base Energy * (1 + .05 * (Level - 1)) * Polar Power + Energy Mutation
     /// </summary>
     /// <returns>Calculated energy, if there's mutation will add and convert percentage to total</returns>
-    private static double CalculateEnergy()
+    private static double CalculateEnergy(Bees bees)
     {
+        string beeName = string.Empty;
+
+
         // The formula for energy is: Base Energy * (1 + .05 * (Level - 1)) * Polar Power + Energy Mutation
-        Console.Write("Please enter your desired bee's base energy: ");
-        bool validEnergy = double.TryParse(Console.ReadLine(), out double baseEnergy);
-        Console.Write("Please enter your desired bee's level: ");
+        Console.WriteLine("Please enter your desired bee or enter (list) for a list of bees!");
+        string answer = Console.ReadLine()!;
+
+
+        if (answer.Equals("list", StringComparison.InvariantCultureIgnoreCase))
+        {
+            bees.ListFull();
+            Console.Write("Please select a bees index: ");
+            bool validIndex = int.TryParse(Console.ReadLine(), out int beesI);
+        }
+
+        else
+        {
+            beeName = bees.BeesDict.FirstOrDefault(x => x.Key.Equals(answer)).Value;
+            Console.WriteLine($"{beeName} Bee");
+        }
+
+
+
+        Console.Write($"Please enter your {beeName}'s level: ");
         bool validLevel = int.TryParse(Console.ReadLine(), out int level);
-        Console.Write("Please enter your polar power: ");
+        Console.Write($"Please enter your polar power: ");
         var polarPower = ConvertPolarPower();
-        Console.Write("Bee's energy mutation (Enter 0 if N/A): ");
+        Console.Write($"Bee's energy mutation (Enter 0 if N/A): ");
         bool validMutation = double.TryParse(Console.ReadLine(), out double energyMutation);
 
-        var result = baseEnergy * (1 + .05 * (level - 1)) * polarPower;
+        var result = 5 * (1 + .05 * (level - 1)) * polarPower;
 
         if (energyMutation is 0)
             return result;
